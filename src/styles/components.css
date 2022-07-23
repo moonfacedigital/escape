@@ -1,0 +1,50 @@
+@layer components {
+  .escape_app {
+    @apply fixed w-full h-full inset-0 pointer-events-auto font-sans;
+  }
+  .escape_btn {
+    @apply absolute right-0 top-1/2 -translate-y-1/2  max-w-full bg-mf-red-300 rounded-l-sm p-3 pointer-events-auto text-white pr-3 shadow-lg cursor-pointer no-underline;
+  }
+  .escape_info {
+    @apply absolute flex gap-y-3 flex-col top-1/2 -translate-y-1/2 right-0 mr-20 w-[37ch] text-right max-w-full leading-normal bg-white p-4 shadow-lg rounded-lg border-[0.1em] border-mf-neutral-100/40;
+  }
+  .escape_info__btn_group {
+    @apply flex justify-end gap-x-6;
+  }
+  .minor_btn {
+    @apply text-black/70 underline decoration-1 underline-offset-2 cursor-pointer hover:decoration-2;
+  }
+  .cta_btn {
+    @apply bg-mf-slate-200 py-1 px-2 rounded-sm cursor-pointer hover:bg-mf-slate-300/80 ease-in duration-75;
+  }
+  .escape_anim__cont {
+    @apply absolute pointer-events-none top-1/2 -translate-y-1/2 right-0 translate-x-1/2;
+  }
+  .escape_anim {
+    @apply w-[30em] h-[30em];
+  }
+  .escape_btn__cont {
+    @apply w-full h-[7rem] overflow-y-auto text-center font-semibold tracking-widest;
+  }
+  h1 {
+    @apply text-mf-slate-900 tracking-[-0.03em] text-3xl lg:text-4xl font-[570] my-3;
+  }
+  h2 {
+    @apply text-mf-slate-600 tracking-[-0.01em] leading-tight text-lg font-light my-2;
+  }
+  h3 {
+    @apply text-mf-slate-900 tracking-[-0.01em] leading-tight text-sm uppercase font-semibold my-1.5;
+  }
+  main {
+    @apply pt-8 lg:pt-12 w-full;
+  }
+  nav {
+    @apply flex resp_cont pt-12 flex-row justify-between;
+  }
+  .centered_cont {
+    @apply p-6 w-full max-w-[50ch] m-8 border-mf-neutral-400 border-2 rounded-md;
+  }
+  pre {
+    @apply px-2 py-0.5 inline-block bg-mf-neutral-100 rounded-sm font-mono font-medium;
+  }
+}

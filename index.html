@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svelte App</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module">
+      function changeScript() {
+        let ifProd = import.meta.env.PROD
+        let script = document.createElement('script')
+        script.setAttribute('type', 'module')
+        if (ifProd) {
+          script.setAttribute('src', '/dist/main.iife.js')
+        } else {
+          script.setAttribute('src', '/src/index.js')
+          console.warn('In Development')
+        }
+        document.body.appendChild(script)
+      }
+      changeScript()
+    </script>
+    <h2
+      style="
+        width: 30em;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        padding: 3rem;
+      "
+    >
+      This component is loaded from a single script!
+    </h2>
+  </body>
+</html>
