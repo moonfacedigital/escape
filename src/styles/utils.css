@@ -21,4 +21,23 @@
       opacity: 0;
     }
   }
+  *::-webkit-scrollbar {
+    width: 1rem; /* width of the entire scrollbar */
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #11182733; /* color of the scroll thumb */
+    border-radius: 999px; /* roundness of the scroll thumb */
+    border: 0.4rem solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+  }
+
+  a[target='_blank']::after {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    margin: 0 3px 0 5px;
+  }
 }

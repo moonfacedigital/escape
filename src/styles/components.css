@@ -17,6 +17,12 @@
   .cta_btn {
     @apply bg-mf-slate-200 py-1 px-2 rounded-sm cursor-pointer hover:bg-mf-slate-300/80 ease-in duration-75;
   }
+  a.inline {
+    @apply text-black/70 underline decoration-1 underline-offset-2 cursor-pointer hover:decoration-2;
+  }
+  li {
+    @apply mb-5;
+  }
   .escape_anim__cont {
     @apply absolute pointer-events-none top-1/2 -translate-y-1/2 right-0 translate-x-1/2;
   }
@@ -27,13 +33,13 @@
     @apply w-full h-[7rem] overflow-y-auto text-center font-semibold tracking-widest;
   }
   h1 {
-    @apply text-mf-slate-900 tracking-[-0.03em] text-3xl lg:text-4xl font-[570] my-3;
+    @apply text-2xl font-semibold tracking-[-0.01em] mt-4 mb-3.5;
   }
   h2 {
-    @apply text-mf-slate-600 tracking-[-0.01em] leading-tight text-lg font-light my-2;
+    @apply text-[1.3rem] font-medium mt-3 mb-2;
   }
   h3 {
-    @apply text-mf-slate-900 tracking-[-0.01em] leading-tight text-sm uppercase font-semibold my-1.5;
+    @apply text-mf-slate-900/70 tracking-[-0.01em] leading-tight text-sm font-medium my-1.5;
   }
   main {
     @apply pt-8 lg:pt-12 w-full;
