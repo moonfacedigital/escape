@@ -2,20 +2,28 @@
 Not recommended for production
 
 
-# Nano
-A svelte template for small yet performant apps ⚡🤏
+# Escape
+Help IPV victims discreetly escape support websites ✊👣
+
+### Features
+- Leave no trace in browser history
+- Hidden in milliseconds
+- One-script installation
+- Lightweight (≈50kb)
+- Meta tag masking (favicon and title) 
+- Performant and non-intrusive
 
 ### To Do's
-
-- [x] Basic struct.
-- [x] Fake SPA routing
-- [ ] Store most recent tab in `sessionStorage`
-- [ ] Scope Tailwind styles to the Svelte app (fix global style leak)
+- [x] Basic functionality
+- [x] Mock Google home-page
+- [x] Hiding popup and storing it in `sessionStorage`
+- [ ] Accessibility check
+- [ ] fix: Escape key usage. `location.replace` not working intermittently
 
 ## How to use
 ###  Dev
 `pnpm run start`
 ### Adding to your site
 Simply add this script at the end of the `<body>` tag or by using your hosting provider's snippet injection:
-<br> `[your site]/dist/main.iife.js`
+<br> `<script src="https://vitals.moonface.digital/escape"></script>`
 
