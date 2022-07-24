@@ -3,7 +3,7 @@ Not recommended for production
 
 
 # Escape
-Help IPV victims discreetly escape support websites ✊👣
+Help domestic abuse victims discreetly escape support websites ✊👣
 
 ### Features
 - Leave no trace in browser history
